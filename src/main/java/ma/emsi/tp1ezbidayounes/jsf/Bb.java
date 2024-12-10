@@ -6,6 +6,8 @@ import jakarta.faces.model.SelectItem;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
+import ma.emsi.tp1ezbidayounes.llm.JsonUtilPourGemini;
+import ma.emsi.tp1ezbidayounes.llm.LlmInteraction;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -56,6 +58,9 @@ public class Bb implements Serializable {
     private String texteReponseJson;
 
     private boolean debug;
+    @Inject
+    private JsonUtilPourGemini jsonUtilPourGemini;
+
     /**
      * Obligatoire pour un bean CDI (classe gérée par CDI).
      */
@@ -158,16 +163,18 @@ public class Bb implements Serializable {
         //this.reponse += question.toLowerCase(Locale.FRENCH) + "||";
 
         //Affiche le rôle de l'API
-        this.reponse += systemRole.toUpperCase(Locale.FRENCH) + "\n";
-        this.systemRoleChangeable = false;
-        //Affiche chaque mot de la question un par un et en Majuscule, un mot dans chaque ligne
-        String[] tokens = question.split(" ");
-        for (String token : tokens) {
-            this.reponse += (token.toUpperCase(Locale.FRENCH) + "\n");
+        try {
+            LlmInteraction interaction = jsonUtilPourGemini.envoyerRequete(question);
+            this.reponse = interaction.reponseExtraite();
+            this.texteRequeteJson = interaction.texteRequeteJson();
+            this.texteReponseJson = interaction.texteReponseJson();
+        } catch (Exception e) {
+            FacesMessage message =
+                    new FacesMessage(FacesMessage.SEVERITY_ERROR,
+                            "Problème de connexion avec l'API du LLM",
+                            "Problème de connexion avec l'API du LLM" + e.getMessage());
+            facesContext.addMessage(null, message);
         }
-
-        // La conversation contient l'historique des questions-réponses depuis le début.
-        afficherConversation();
         return null;
     }
 

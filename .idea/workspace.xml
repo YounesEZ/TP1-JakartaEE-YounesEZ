@@ -10,10 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bb125c6-c732-468f-9f0f-9538114308bd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/JsonUtilPourGemini.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/LlmClientPourGemini.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/LlmInteraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/RequeteException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/jsf/Bb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/jsf/Bb.java" afterDir="false" />
     </list>
@@ -154,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733829249434</updated>
       <workItem from="1733829250404" duration="2132000" />
-      <workItem from="1733863011186" duration="1760000" />
+      <workItem from="1733863011186" duration="3180000" />
     </task>
     <servers />
   </component>
