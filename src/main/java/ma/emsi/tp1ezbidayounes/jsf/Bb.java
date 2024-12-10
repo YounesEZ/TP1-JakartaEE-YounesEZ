@@ -55,7 +55,7 @@ public class Bb implements Serializable {
 
     private String texteReponseJson;
 
-    private boolean isDebug;
+    private boolean debug;
     /**
      * Obligatoire pour un bean CDI (classe gérée par CDI).
      */
@@ -103,10 +103,10 @@ public class Bb implements Serializable {
     }
 
     public boolean isDebug() {
-        return isDebug;
+        return debug;
     }
     public void setDebug(boolean debug) {
-        isDebug = debug;
+        debug = debug;
     }
 
     /**
