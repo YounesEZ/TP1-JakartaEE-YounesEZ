@@ -58,6 +58,7 @@ public class Bb implements Serializable {
     private String texteReponseJson;
 
     private boolean debug;
+
     @Inject
     private JsonUtilPourGemini jsonUtilPourGemini;
 
@@ -111,7 +112,7 @@ public class Bb implements Serializable {
         return debug;
     }
     public void setDebug(boolean debug) {
-        debug = debug;
+        this.debug = debug;
     }
 
     /**
@@ -172,9 +173,10 @@ public class Bb implements Serializable {
             FacesMessage message =
                     new FacesMessage(FacesMessage.SEVERITY_ERROR,
                             "Problème de connexion avec l'API du LLM",
-                            "Problème de connexion avec l'API du LLM" + e.getMessage());
+                            "Problème de connexion avec l'API du LLM : " + e.getMessage());
             facesContext.addMessage(null, message);
         }
+        afficherConversation();
         return null;
     }
 
