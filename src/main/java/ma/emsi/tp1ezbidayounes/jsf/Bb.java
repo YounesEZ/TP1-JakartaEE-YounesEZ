@@ -51,6 +51,11 @@ public class Bb implements Serializable {
     @Inject
     private FacesContext facesContext;
 
+    private String texteRequeteJson;
+
+    private String texteReponseJson;
+
+    private boolean isDebug;
     /**
      * Obligatoire pour un bean CDI (classe gérée par CDI).
      */
@@ -81,6 +86,29 @@ public class Bb implements Serializable {
         return reponse;
     }
 
+    public String getTexteReponseJson() {
+        return texteReponseJson;
+    }
+
+    public void setTexteReponseJson(String texteReponseJson) {
+        this.texteReponseJson = texteReponseJson;
+    }
+
+    public String getTexteRequeteJson() {
+        return texteRequeteJson;
+    }
+
+    public void setTexteRequeteJson(String texteRequeteJson) {
+        this.texteRequeteJson = texteRequeteJson;
+    }
+
+    public boolean isDebug() {
+        return isDebug;
+    }
+    public void setDebug(boolean debug) {
+        isDebug = debug;
+    }
+
     /**
      * setter indispensable pour le textarea.
      *
@@ -98,7 +126,9 @@ public class Bb implements Serializable {
         this.conversation = new StringBuilder(conversation);
     }
 
-
+    public void toggleDebug() {
+        this.setDebug(!isDebug());
+    }
     /**
      * Envoie la question au serveur.
      * En attendant de l'envoyer à un LLM, le serveur fait un traitement quelconque, juste pour tester :
