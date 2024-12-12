@@ -22,7 +22,7 @@ import java.util.Map;
 @Dependent
 public class JsonUtilPourGemini implements Serializable {
 
-    private String systemRole = "helpful assistant";
+    private String systemRole = "correcteur d'orthographe professionnel qui corrige les questions de l'utilisateur";
     /**
      * Pour ajouter une nouvelle valeur à la fin du tableau JSON "messages" dans le document JSON de la requête.
      * Le "-" final indique que la valeur sera ajoutée à la fin du tableau.

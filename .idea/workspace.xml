@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5bb125c6-c732-468f-9f0f-9538114308bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/jsf/Bb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/jsf/Bb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/JsonUtilPourGemini.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/JsonUtilPourGemini.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,10 +42,10 @@
     &quot;accountId&quot;: &quot;e78a8b7c-f347-4f75-83ae-3383f22ac70d&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -198,7 +197,10 @@
       <updated>1733829249434</updated>
       <workItem from="1733829250404" duration="2132000" />
       <workItem from="1733863011186" duration="4000000" />
-      <workItem from="1733867156650" duration="2097000" />
+      <workItem from="1733867156650" duration="2140000" />
+      <workItem from="1733908253175" duration="2850000" />
+      <workItem from="1733915097920" duration="1077000" />
+      <workItem from="1734018800237" duration="379000" />
     </task>
     <servers />
   </component>
