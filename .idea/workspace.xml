@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5bb125c6-c732-468f-9f0f-9538114308bd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/JsonUtilPourGemini.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ma/emsi/tp1ezbidayounes/llm/JsonUtilPourGemini.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
         <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -200,7 +199,10 @@
       <workItem from="1733867156650" duration="2140000" />
       <workItem from="1733908253175" duration="2850000" />
       <workItem from="1733915097920" duration="1077000" />
-      <workItem from="1734018800237" duration="1054000" />
+      <workItem from="1734018800237" duration="1235000" />
+      <workItem from="1734021254654" duration="535000" />
+      <workItem from="1734094291000" duration="1089000" />
+      <workItem from="1734096367564" duration="2777000" />
     </task>
     <servers />
   </component>
